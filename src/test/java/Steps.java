@@ -17,12 +17,10 @@ public class Steps {
 
         System.setProperty("webdriver.chrome.driver", "C:\\Drivers\\chromedriver.exe");
         driver = new ChromeDriver();
-
-
         driver.manage().window().maximize();
         driver.get("https://yandex.ru/");
 
-        // Заходим в маркет
+// Заходим в маркет
         WebElement market;
         market = driver.findElement(By.xpath("//a[@data-id='market']"));
         market.click();
